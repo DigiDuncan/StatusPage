@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DigiDuncan Status</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='fonts/stylesheet.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+        <!-- Font Awesome - https://github.com/FortAwesome/Font-Awesome/tree/5.8.2 -->
+        <script src="https://kit.fontawesome.com/3976b8e6c9.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
+    </head>
+    <body>
+        <div class="center">
+            <form method="POST">
+                <div>
+                    <label for="status">Status</label>
+                    <input name="status">
+                </div>
+                <div>
+                    <label for="details">Details</label>
+                    <input name="details">
+                </div>
+                <div>
+                    <button>Update</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
