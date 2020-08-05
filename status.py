@@ -4,9 +4,9 @@ import arrow
 app = Flask(__name__)
 
 s = "LOADING"
-d = ""
+d = "Digi forgot to update the page after refreshing the server..."
 lu = arrow.now()
-dis = "online"
+dis = "probably"
 
 
 @app.route("/")
