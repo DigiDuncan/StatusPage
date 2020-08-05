@@ -8,6 +8,9 @@ d = "(not really)"
 dis = "online"
 lu = arrow.now()
 
+if not s.endswith((".", "!", "?")):
+    s += "."
+
 
 @app.route("/")
 def home():
