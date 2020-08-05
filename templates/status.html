@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DigiDuncan Status</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='fonts/stylesheet.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+        <!-- Font Awesome - https://github.com/FortAwesome/Font-Awesome/tree/5.8.2 -->
+        <script src="https://kit.fontawesome.com/3976b8e6c9.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
+    </head>
+    <body>
+        <div class="center">
+            <div class="mainstatus">
+                <p>DigiDuncan is currently</p>
+                <h1>{{status}}</h1>
+                <h2>{{details}}</h2>
+            </div>
+            <div class="discord">
+                <p><span class="discordid">DigiDuncan#4979</span> is {{discord}} on Discord.</p>
+            </div>
+        </div>
+        <div class="socials">
+            <a class="social-icon" href="http://www.youtube.com/DigiDuncan"><i class="fab fa-youtube-square"></i></a>
+            <a class="social-icon" href="http://www.twitch.tv/DigiDuncan"><i class="fab fa-twitch"></i></a>
+            <a class="social-icon" href="http://www.github.com/DigiDuncan"><i class="fab fa-github"></i></a>
+            <a class="social-icon" href="http://www.twitter.com/DigiDuncan"><i class="fab fa-twitter"></i></a>
+            <a class="social-icon" href="http://donate.digiduncan.com/"><i class="fas fa-donate"></i></a>
+            <div class="lastupdated">
+                <p>Status last updated {{lastupdated.format('YYYY-MM-DD hh:mm:ss A ZZZ')}} ({{lastupdated.humanize()}}).</p>
+            </div>
+        </div>
+        <footer>
+            <p>status.digiduncan.com is a constant work in progress, and is not always up-to-date with real time. Created by DigiDuncan.</p>
+        </footer>
+    </body>
+</html>
